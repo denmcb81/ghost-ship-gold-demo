@@ -63,7 +63,7 @@ At 1.00 stake nobody busts within 500 spins (1,000 credits covers 1,000 spins). 
 
 ## Game rules used by the maths
 
-- **Grid**: 5 reels × 4 rows, 1024 ways (left to right, adjacent reels from reel 1). Each cell is a weighted draw. At most one bottle (scatter) per reel. WILD never lands on reel 1. Reel weights are staggered per reel (reel bias).
+- **Grid**: 5 reels × 4 rows, 1024 ways (left to right, adjacent reels from reel 1). Each cell is a weighted draw. At most one BONUS bottle (scatter) per reel. WILD never lands on reel 1. Reel weights are staggered per reel (reel bias).
 - **Pays** (× total bet, per way; 3/4/5 of a kind):
 
 | Symbol | 3 | 4 | 5 |
@@ -74,11 +74,11 @@ At 1.00 stake nobody busts within 500 spins (1,000 credits covers 1,000 spins). 
 | Skeleton | 0.4 | 1 | 4 |
 | Siren | 0.5 | 1.5 | 6 |
 | Captain | 1 | 3 | 12 |
-| Bottle (scatter, anywhere) | 2 | 10 | 50 |
+| BONUS ship-in-a-bottle (scatter, anywhere) | 2 | 10 | 50 |
 
 - **Base weights**: Rum 100, Compass 100, Anchor 90, Pistol 90, Parrot 46, Skeleton 38, Siren 30, Captain 18, Wild 3.4, Bottle 12, Cursed Coin 48.
 - **Kraken Attack**: 1 in 100 base spins. 2–4 wilds smash onto reels 2–5 before evaluation.
-- **Free spins** (3+ bottles): the player chooses a ship. Every ship's expected value is equal within the simulation error.
+- **Free spins** (3+ BONUS bottles): the player chooses a ship. Every ship's expected value is equal within the simulation error.
 
 | Ship | Spins | Ghost-wild multiplier | Free-spins wild weight |
 |---|---|---|---|

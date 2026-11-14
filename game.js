@@ -863,7 +863,7 @@
       backToBase();
     }
     if (doFs) {
-      if (doHold) { msg('…and the bottles call the ghost ship!'); await sleep(T(600)); }
+      if (doHold) { msg('…and the BONUS bottles call the ghost ship!'); await sleep(T(600)); }
       else {
         res.scatters.forEach(([r, k]) => { const e = cellEl(r, k); e.classList.add('glowsc'); burst(e, '#62ffb4', 18); });
         sfx.laugh(); await sleep(T(900));
@@ -949,7 +949,7 @@
     const b = bet();
     let h = '<tr><th>SYMBOL</th><th>3</th><th>4</th><th>5</th></tr>';
     C.payOrder.forEach(id => { const s = S[id]; h += `<tr><td>${icon(id)}${s.name}</td>${s.pay.map(p => `<td>${fmt(p * b)}</td>`).join('')}</tr>`; });
-    h += `<tr><td>${icon('SCATTER')}Bottle</td><td>${fmt(C.scatterPay[3] * b)}</td><td>${fmt(C.scatterPay[4] * b)}</td><td>${fmt(C.scatterPay[5] * b)}</td></tr>`;
+    h += `<tr><td>${icon('SCATTER')}BONUS bottle</td><td>${fmt(C.scatterPay[3] * b)}</td><td>${fmt(C.scatterPay[4] * b)}</td><td>${fmt(C.scatterPay[5] * b)}</td></tr>`;
     h += `<tr><td>${icon('WILD')}Wild</td><td colspan="3">Substitutes for all paying symbols (reels 2–5)</td></tr>`;
     h += `<tr><td>${icon('COIN')}Cursed Coin</td><td colspan="3">${H.values.map(v => fmtC(v * b)).join(' · ')}</td></tr>`;
     $('payTable').innerHTML = h;
